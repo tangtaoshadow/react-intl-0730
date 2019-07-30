@@ -10,9 +10,11 @@
 
 创建时间：2019-7-30 21:34:09
 
-修改时间：2019-7-30 21:34:15
+修改时间：2019-7-30 22:48:31
 
-package.json
+
+
+**package.json**
 
 ```json
 {
@@ -52,7 +54,7 @@ package.json
 
 
 
-文件结构：
+**文件结构**
 
 ```json
 │  .gitignore
@@ -78,4 +80,80 @@ package.json
         zh.json
 
 ```
+
+
+
+**中文文档**
+
+```json
+{
+    "app.text": "杭州电子科技大学 管理学院 2016级 唐涛 tangtao2099@outlook.com ",
+    "app.learn-react-link": "我的主页"
+}
+```
+
+
+
+**英文文档**
+
+```json
+{
+    "app.text": "HDU 2016 Industry & Business Administration TangTao tangtao2099@outlook.com",
+    "app.learn-react-link": "My Homepage"
+}
+```
+
+
+
+**语言配置**
+
+```html
+<img src={logo} className="App-logo" alt="logo" />
+        <p>
+            <FormattedHTMLMessage id="app.text"
+                defaultMessage="杭州电子科技大学 唐涛 管理学院 2016级tangtao2099@outlook.com "
+                description="杭州电子科技大学 唐涛 "
+                values={{ what: 'react-intl' }}/>
+        </p>
+        <a className="App-link" href="https://www.woaihdu.top" target="_blank" rel="noopener noreferrer">
+            <FormattedMessage 
+                id="app.learn-react-link"
+                defaultMessage=""
+                description="Link on react page"/>
+        </a>
+```
+
+
+
+**参数说明**
+
+| 参数             | 选择   | 描述                                                         |
+| ---------------- | ------ | ------------------------------------------------------------ |
+| `id`             | 需要   | 用于引用翻译的标识符                                         |
+| `description`    | 可选的 | 消息的描述 - 为翻译者提供工作的一些上下文                    |
+| `defaultMessage` | 可选的 | 如果未找到转换，则显示默认消息。这可能已经是您主要语言的文本 |
+| `values`         | 可选的 | 包含消息参数的对象\| {.table .table-striped}                 |
+
+
+
+**运行**
+
+```json
+npm  install
+npm  run start
+```
+
+
+
+**效果**
+
+
+
+![效果](http://cdn.promiselee.cn/share_static/react-intl-20190730220142.png)
+
+
+
+
+
+
 
