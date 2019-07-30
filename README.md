@@ -54,6 +54,7 @@ package.json
 
 文件结构：
 
+```json
 │  .gitignore
 │  package-lock.json
 │  package.json
@@ -76,5 +77,5 @@ package.json
         serviceWorker.js
         zh.json
 
-
+```
 
