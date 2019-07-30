@@ -1,68 +1,78 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 基于react-intl 实现国际化
 
-## Available Scripts
+*唐涛 [杭州电子科技大学](http://www.hdu.edu.cn/) 2016级 管理学院工商管理(16001324@hdu.edu.cn)*
 
-In the project directory, you can run:
+- [个人主页](http://promiselee.cn/)  www.promiselee.cn
+- [知乎](https://www.zhihu.com/people/tang-tao-24-36/activities)
+- [gitee](https://gitee.com/tangtao2099)
+- [github](https://github.com/tangtaoshadow)
+- [Email](mailto:tangtao2099@outlook.com)  tangtao2099@outlook.com
 
-### `npm start`
+创建时间：2019-7-30 21:34:09
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+修改时间：2019-7-30 21:34:15
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+package.json
 
-### `npm test`
+```json
+{
+  "name": "react-intl-0730",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-intl": "^2.9.0",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+文件结构：
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+│  .gitignore
+│  package-lock.json
+│  package.json
+│  README.md
+│  yarn.lock
+│
+├─public
+│      favicon.ico
+│      index.html
+│      manifest.json
+│
+└─src
+        App.css
+        App.js
+        App.test.js
+        en.json
+        index.css
+        index.js
+        logo.svg
+        serviceWorker.js
+        zh.json
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
